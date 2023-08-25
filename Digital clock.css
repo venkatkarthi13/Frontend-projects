@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./media/istockphoto-1489566726-1024x1024.jpg");
+    background-size: cover;
+}
+
+.parent{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+.clock{
+    position: absolute;
+    top:35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 50%;
+    color: rgb(243, 244, 235);
+    font-size: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgb(216, 42, 23),
+                inset  2px 3px 3px rgb(67, 237, 141);
+    transform: translate(-50% , -50%);
+
+}
+
+
+

@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./media/istockphoto-1489566726-1024x1024.jpg");
+   
+}
+/* .container{
+    display: flex;
+    justify-content: center;
+} */
+
+.count{
+    margin: 20vh auto;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-family: 'Sansita Swashed', cursive;
+    color: aliceblue;
+}
+
+.value{
+    text-align: center;
+    color: aquamarine;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 250px) {
+    /* for screens up to 250px wide */
+    .count {
+        font-size: 30px;
+    }
+    
+    .value {
+        font-size: 2rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+}
