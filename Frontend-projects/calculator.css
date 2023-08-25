@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.calculator{
+    background:url('./kush-dwivedi-OLHHHmqS1RM-unsplash\ -\ Copy.jpg');
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.calculator form input{
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    outline: 0px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.2),
+                5px 5px 10px rgba(0,0,0,0.2);
+
+    background: transparent;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.calculator form input:hover{
+    transform: scale(1.1);
+    background-color: #e9f46f;
+    color: aliceblue;
+    font-weight: 500;
+
+}
+
+.text{
+    display: flex;
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+.type{
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    text-align: right;
+    font-size: 50px;
+}
+form input.equal{
+    width: 125px;
+}
+
+form input.operators{
+    color: aquamarine;
+}
+
+@media (max-width: 768px) {
+    .calculator form input {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+    }
+
+    form input.equal {
+        width: 100px;
+    }
+}
