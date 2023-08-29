@@ -33,6 +33,12 @@
     font-family: 'Barriecito', cursive;
 }
 
+.tag{
+    display: flex;
+    align-items: center;
+    margin-top: 7px; 
+    font-size: 15px;
+}
 .Hex{
     font-family: 'Sansita Swashed', cursive;
     padding-right: 35px;
