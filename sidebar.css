@@ -1,0 +1,104 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url('./media/leaves.webp');
+    background-size: cover;
+}
+.sidebar-toggle{
+    position: absolute;
+    right: 10%;
+    top: 5px;
+    color: aqua;
+    font-size: 50px;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+}
+
+.button-icon{
+    background: none; 
+    border: none; 
+    color: rgb(211, 44, 44);
+    font-size: 30px;
+    transition: all 0.2s;
+
+}
+
+.button-icon:hover{
+    transform: rotate(3600deg);
+}
+
+.side{
+    position: fixed;
+    background-color: aliceblue;
+    height: 100%;
+    width: 400px;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    margin: 0px auto;
+    grid-template-rows:auto 1fr auto;
+    row-gap: 1em; 
+    background-image: url('./media/lights.webp'); 
+    background-size: cover;
+    transform: translate(-100%);
+    transition: transform 0.5s ease;
+}
+
+.show-sidebar{
+    transform: translate(0);
+}
+
+.text{
+    font-size: 40px;
+    color: rgba(251, 251, 248, 0.848);
+    padding-left: 5px;
+    box-shadow: 3px 3px 3px rgba(187, 196, 203,0.7),
+                inset 3px 3px 3px rgba(187, 196, 203,0.7);
+    border-radius: 5px;
+}
+
+.side-header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.links{
+    font-size: 25px;
+    display: grid;
+    margin: 0px auto;
+}
+
+.fb{
+    color: rgb(230, 52, 123);
+  }
+  
+  .insta{
+    color: rgb(218, 158, 79);
+  }
+  
+  .wp{
+    color: rgb(79, 218, 91);
+  }
+  
+  .lin{
+    color: rgb(79, 153, 218);
+  }
+
+@media screen and(min-width:500px){
+    .side{
+        width: 300px;
+    }  
+}
+@media screen and(min-width:300px){
+    .side{
+        width: 100px;
+    }  
+}
