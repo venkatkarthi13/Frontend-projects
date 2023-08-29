@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('./media/christian-spasov-JhT5z93iSOY-unsplash.jpg');
+    background-size: cover;
+}
+
+.card{
+    background-color: aliceblue;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    margin: 0px auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 3px aliceblue,
+                -2px -2px 3px aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal{
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.bttn{
+    background-color: rgb(108, 237, 237);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 3px;
+    color:tomato;
+    font-family: 'Philosopher', sans-serif;
+    box-shadow: 2px 2px 3px rgb(108, 237, 237),
+               -2px -2px 3px rgb(108, 237, 237);
+    transition:  0.2s;
+}
+
+.bttn:hover{
+    outline: 2px solid rgb(242, 242, 41);
+    color: rgb(242, 30, 136);
+    background: none;
+    box-shadow: 2px 2px 3px rgb(242, 242, 41),
+    -2px -2px 3px rgb(242, 242, 41);
+    font-family: 'Spirax', cursive;
+    font-size: 20px;
+}
+
+.modal-overlay{
+    position: fixed;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(39, 118, 187);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 3px aliceblue,
+                -2px -2px 3px aliceblue;
+    border-radius: 5px;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.visible {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.button-icon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    color: rgb(235, 230, 80);
+    font-size: 25px;
+    transition: all 0.2s;
+}
+
+.button-icon:hover{
+    
+    transform: rotate(3600deg);
+    color: tomato;
+
+}
+
+.content{
+    color:rgb(94, 236, 174);
+    font-size: 30px;
+}
