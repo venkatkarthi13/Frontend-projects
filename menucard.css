@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  background-image:linear-gradient(0deg,rgba(72, 70, 70,0.8),rgba(72, 70, 70,0.8)), url('./media/menu.jpg');
+  background-size: cover;
+  background-position: center; 
+    
+}
+
+
+.header{
+    text-align: center;
+    margin: 40px auto;
+    color: aliceblue;
+    font-family: 'Life Savers', cursive;
+    
+}
+
+.underline{
+    background-color: rgb(237, 138, 33);
+    height: 3px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    background: none;
+    outline: none;
+    gap: 10px;
+
+    
+}
+.filter{
+    background: none;
+    outline:none;
+    border: 2px solid rgb(63, 224, 157);
+    border-radius: 3px;
+    color:thistle;
+    font: 1em sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.4s;
+    /* font-style: oblique; */
+
+}
+
+.filter:hover{
+    background-color: rgb(192, 56, 84);
+    color:mintcream;
+    border: none;
+    border: 2px solid transparent;
+    font-style: italic;
+}
+
+.sections{
+    height: 200px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 5px;
+    position: relative;
+    margin:15px auto;
+    margin-right: 50%;
+   
+}
+.menu-item{
+    height: 200px;
+    width: 200px;
+    
+  
+}
+
+.item-img{
+    position: absolute;
+    height: 150px;
+    width: 150px;   
+    border: 3px solid hotpink;
+    border-radius: 5px;
+    top: 0%;
+    left: 0%;
+    transition: all 0.3s ease;
+
+}
+
+.item-img:hover{
+    transform: scale(1.3);
+    
+}
+
+.info{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 0%;
+    right: 5%;
+}
+
+.rate{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+.item-title{
+    color: rgb(242, 236, 64);
+    /* font-style: oblique; */
+    font-weight: 400;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.item-price{
+    color: rgb(26, 231, 224);
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.item-desc{
+    color: rgba(238, 235, 235, 0.948);
+    font-weight: 900;
+    font-size: 12px;
+    margin-top: 10px;
+    background-color:rgba(49, 47, 48, 0.516);
+    box-shadow: 4px 4px 5px rgb(49, 47, 48),
+                -4px -4px 5px rgba(49, 47, 48) ;
+    border-radius: 3px;
+    transition: all 0.3s;
+    /* text-align: center; */
+}
+
+.item-desc:hover{
+    transform: scale(1.1);
+}
