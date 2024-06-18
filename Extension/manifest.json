@@ -1,0 +1,16 @@
+
+
+{
+    "manifest_version": 3,
+    "name": "linker",
+    "version": "1.0",
+    "action":{
+        "default_popup":"extension.html",
+        "default_icon":"save.png"
+    },
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ]
+  }
+  
