@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("./cinema_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 125vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.date-container, .time-container{
+  color: blanchedalmond;
+  font-family: "Sevillana", cursive;
+  font-size: 25px;
+}
+
+.movie-container .pick{
+  color:rgb(139, 226, 115);
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 25px;
+
+}
+
+.movie-container,.date-container, .time-container {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.movie-container select, .date-container input, .time-container select{
+  background-color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.seat {
+  background-color: #444451;
+  color: darkgoldenrod;
+  height: 20px;
+  width: 25px;
+  margin: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.screen {
+  background-color: #fff;
+  height: 111px;
+  width: 100%;
+  margin: 5px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(234, 207, 86);
+  padding: 1%;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .seat {
+    height: 16px;
+    width: 18px;
+    font-size: 8px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .movie-container select, .date-container, .time-container {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    padding: 1%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./cinema_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140vh;
+    padding: 10px;
+  }
+  .seat {
+    height: 14px;
+    width: 16px;
+    font-size: 6px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .movie-container select ,.date-container, .time-container {
+    font-size: 10px;
+  }
+
+  .btn {
+    padding: 2%;
+    font-size: 10px;
+  }
+
+  p.text {
+    margin: 5px 0;
+    font-size: 10px;
+}
+
+}

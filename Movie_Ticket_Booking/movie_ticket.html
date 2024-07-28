@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dice.css" />
+    <title>Movie Seat Booking</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&family=Trade+Winds&display=swap');
+      </style>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label class="pick">Pick a movie:</label>
+      <select id="movie">
+        <option value="0">...Select...</option>
+        <option value="300">Aavesham (₹300)</option>
+        <option value="400">Bad Boys (ride or die) (₹400)</option>
+        <option value="350">Rayan (₹350)</option>
+        <option value="450">Imaginary (3D) (₹450)</option>
+        <option value="300">Na Saami Ranga (₹300)</option>
+        <option value="450">Garudan (₹450)</option>
+        <option value="300">Harom Hara (₹300)</option>
+        <option value="400">Bhaiyya Ji (₹400)</option>
+        <option value="600">The First Omen (₹600)</option>
+        <option value="350">Tarot (₹350)</option>
+      </select>
+      <div class="date-container">
+        <label> Date:</label>
+        <input type="date" id="movie-date">
+      </div>
+  
+      <div class="time-container">
+        <label>Show Time:</label>
+        <select id="movie-time">
+          <option value="0">...Select...</option>
+          <option value="10:00">10:00 AM</option>
+          <option value="14:00">2:00 PM</option>
+          <option value="18:00">6:00 PM</option>
+          <option value="22:00">10:00 PM</option>
+        </select>
+      </div>
+  
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat" data-seat-number="A1">A1</div>
+        <div class="seat" data-seat-number="A2">A2</div>
+        <div class="seat" data-seat-number="A3">A3</div>
+        <div class="seat" data-seat-number="A4">A4</div>
+        <div class="seat" data-seat-number="A5">A5</div>
+        <div class="seat" data-seat-number="A6">A6</div>
+        <div class="seat" data-seat-number="A7">A7</div>
+        <div class="seat" data-seat-number="A8">A8</div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat-number="B1">B1</div>
+        <div class="seat" data-seat-number="B2">B2</div>
+        <div class="seat" data-seat-number="B3">B3</div>
+        <div class="seat occupied" data-seat-number="B4">B4</div>
+        <div class="seat occupied" data-seat-number="B5">B5</div>
+        <div class="seat" data-seat-number="B6">B6</div>
+        <div class="seat" data-seat-number="B7">B7</div>
+        <div class="seat" data-seat-number="B8">B8</div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat-number="C1">C1</div>
+        <div class="seat" data-seat-number="C2">C2</div>
+        <div class="seat" data-seat-number="C3">C3</div>
+        <div class="seat" data-seat-number="C4">C4</div>
+        <div class="seat" data-seat-number="C5">C5</div>
+        <div class="seat" data-seat-number="C6">C6</div>
+        <div class="seat occupied" data-seat-number="C7">C7</div>
+        <div class="seat occupied" data-seat-number="C8">C8</div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat-number="D1">D1</div>
+        <div class="seat" data-seat-number="D2">D2</div>
+        <div class="seat" data-seat-number="D3">D3</div>
+        <div class="seat" data-seat-number="D5">D4</div>
+        <div class="seat" data-seat-number="D5">D5</div>
+        <div class="seat" data-seat-number="D6">D6</div>
+        <div class="seat" data-seat-number="D7">D7</div>
+        <div class="seat" data-seat-number="D8">D8</div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat-number="E1">E1</div>
+        <div class="seat" data-seat-number="E2">E2</div>
+        <div class="seat" data-seat-number="E3">E3</div>
+        <div class="seat occupied" data-seat-number="E4">E4</div>
+        <div class="seat occupied" data-seat-number="E5">E5</div>
+        <div class="seat" data-seat-number="E6">E6</div>
+        <div class="seat" data-seat-number="E7">E7</div>
+        <div class="seat" data-seat-number="E8">E8</div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat-number="F1">F1</div>
+        <div class="seat" data-seat-number="F2">F2</div>
+        <div class="seat" data-seat-number="F3">F3</div>
+        <div class="seat" data-seat-number="F4">F4</div>
+        <div class="seat occupied" data-seat-number="F5">F5</div>
+        <div class="seat occupied" data-seat-number="F6">F6</div>
+        <div class="seat occupied" data-seat-number="F7">F7</div>
+        <div class="seat" data-seat-number="F8">F8</div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of ₹<span id="total">0</span>
+    </p>
+  
+    <button id="pay-now" class="btn">Book Tickets</button>
+    <p id="confirmation-message" class="text"></p>
+  </div>
+
+    <script src="dice.js"></script>
+  </body>
+</html>
